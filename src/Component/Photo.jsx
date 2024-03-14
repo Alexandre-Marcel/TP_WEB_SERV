@@ -1,8 +1,10 @@
-function Photo() {
 
 
+
+function Photo(props) {
+    const source =  "https://picsum.photos/id/"+(props.id)+"/"+(props.size.width)+"/"+(props.size.height)
     return (
-      <a><img src="https://picsum.photos/500/300" /></a>
+      <a><img src={source} /></a>
     )
   }
   
