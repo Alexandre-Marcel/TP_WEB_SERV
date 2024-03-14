@@ -1,30 +1,13 @@
 import './App.css'
+import Gallery from './Gallery.jsx'
 
 function App() {
 
 
   return (
-    <Gallery />
-  )
-}
-
-function Gallery() {
-
-
-  return (
     <div>
-      <h1>Gallery de photos</h1>
-      <Photo />
-      <Photo />
+      <Gallery />
     </div>
-  )
-}
-
-function Photo() {
-
-
-  return (
-    <a><img src="https://picsum.photos/500/300" /></a>
   )
 }
 

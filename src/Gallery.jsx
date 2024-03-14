@@ -1,3 +1,4 @@
+import Photo from './Photo.jsx'
 
 function Gallery() {
 
@@ -10,3 +11,5 @@ function Gallery() {
       </div>
     )
   }
+
+  export default Gallery
