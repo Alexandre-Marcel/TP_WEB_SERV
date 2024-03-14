@@ -1,14 +1,14 @@
 import Photo from './Photo.jsx'
 
-function Gallery() {
+function Gallery(props) {
 
     var size 
     return (
       <div>
         <h1>Gallery de photos</h1>
-        <Photo id = {237} size={size = {width : 500,height : 300}}/>
-        <Photo id = {240} size={size = {width : 400,height : 200}}/>
-        <Photo id = {377} size={size = {width : 300,height : 100}}/>
+        {props.liste.map(info =>
+        <Photo author = {info.author} id = {info.id} size={size = {width : info.width ,height : info.height}}/>)
+        }
       </div>
     )
   }
