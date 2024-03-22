@@ -2,6 +2,7 @@ import './App.css'
 import Gallery from './Component/Gallery.jsx'
 import List from './Component/Data.jsx'
 import Search from './Component/Search.jsx'
+import Hide from './Component/Hide.jsx'
 import { useState } from 'react'
 
 
@@ -13,10 +14,17 @@ function App() {
     });
     setBookFilter(filtered);
   }
+
+  const [hideId, setHideId] = useState(true);
+  const handleHideIdChange = (event) => {
+    setHideId(event.target.checked);
+  };
+  
   return (
     <div>
       <Search onSearch = {handleChange}/>
-      <Gallery liste = {bookFilter}/>
+      <Hide onHideIdChange={handleHideIdChange}/>
+      <Gallery liste = {bookFilter} hideId={hideId}/>
     </div>
   )
 }

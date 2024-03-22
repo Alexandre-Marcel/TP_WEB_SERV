@@ -7,7 +7,7 @@ function Gallery(props) {
       <div>
         <h1>Gallery de photos</h1>
         {props.liste.map(info =>
-        <Photo author = {info.author} id = {info.id} size={size = {width : info.width ,height : info.height}}/>)
+        <Photo author = {info.author} id = {info.id} size={size = {width : info.width ,height : info.height}} hideId={props.hideId}/>)
         }
       </div>
     )
