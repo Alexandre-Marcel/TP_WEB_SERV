@@ -1,4 +1,3 @@
-import Hide from './Hide.jsx'
 
 function Photo(props) {
     const source =  "https://picsum.photos/id/"+(props.id)+"/"+(props.size.width)+"/"+(props.size.height);
